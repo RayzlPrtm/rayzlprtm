@@ -1,0 +1,192 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/Shoes_patu"
+    tools:context=".MainActivity">
+
+    <!-- Tombol Kembali -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="37dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Back Button"
+        android:src="@drawable/bacK_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Judul Utama -->
+
+    <!-- Kotak Form -->
+
+    <TextView
+        android:id="@+id/welcomeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:gravity="center"
+        android:text="Selamat Datang\ndi RayzlShop!"
+        android:textColor="#F1730000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/brownBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="15dp"
+        android:background="#CC4B2606"
+        android:padding="85dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <!-- Email Field -->
+
+        <!-- Password Field -->
+
+        <EditText
+            android:id="@+id/emailField"
+            android:layout_width="220dp"
+            android:layout_height="69dp"
+            android:background="@drawable/download_6"
+            android:drawableStart=""
+            android:drawablePadding="15dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.222"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/loginLink"
+            android:layout_width="43dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="20dp"
+            android:contentDescription="login"
+            android:src="@drawable/download_2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- Tombol Sign In -->
+        <EditText
+            android:id="@+id/passwordField"
+            android:layout_width="227dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/download_6"
+            android:drawableStart=""
+            android:drawablePadding="8dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/emailField" />
+
+        <!-- Lupa Password -->
+
+        <ImageView
+            android:id="@+id/backButton2"
+            android:layout_width="43dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="152dp"
+            android:layout_marginTop="76dp"
+            android:contentDescription="Back Button"
+            android:src="@drawable/ic_lock"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="213dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/download_6"
+            android:backgroundTint="#E4D311"
+            android:text="Sign In"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/passwordField" />
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Lupa Password?"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/signInButton" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Separator -->
+    <TextView
+        android:id="@+id/orSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="atau"
+        android:textColor="#101010"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/brownBox" />
+
+    <!-- Tombol Google -->
+    <Button
+        android:id="@+id/googleButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:drawableStart="@drawable/gogle_up"
+        android:drawablePadding="8dp"
+        android:text="Google"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toStartOf="@id/facebookButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/orSeparator" />
+
+
+
+    <!-- Tombol Facebook -->
+    <Button
+        android:id="@+id/facebookButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#3B5998"
+        android:drawableStart="@drawable/ic_facebook"
+        android:drawablePadding="8dp"
+        android:text="Facebook"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/googleButton"
+        app:layout_constraintTop_toBottomOf="@id/orSeparator" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
